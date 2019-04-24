@@ -1,9 +1,12 @@
 package cn.nsu.edu.estore.utils;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import javax.imageio.ImageIO;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,13 +14,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import javax.imageio.ImageIO;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class CheckImgServlet
@@ -136,10 +132,8 @@ public class CheckImgServlet extends HttpServlet {
     /**
      * 取其某一范围的color
      *
-     * @param fc
-     *            int 范围参数1
-     * @param bc
-     *            int 范围参数2
+     * @param fc int 范围参数1
+     * @param bc int 范围参数2
      * @return Color
      */
     private Color getRandColor(int fc, int bc) {
