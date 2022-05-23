@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>HuaWei Mall</title>
 <link rel="stylesheet" type="text/css" href="home/CSS/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="home/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="home/CSS/main.css">
@@ -130,13 +130,13 @@ function contactMe() {
                                placeholder="重复密码">
                         <span id="repassword_message"></span>
                     </div>
-                    <div class="captcha input-wrapper" data-type="en">
-                        <input id="captcha-1" name="captcha" placeholder="验证码" required="" data-rule-required="true"
-                               data-msg-required="请填写验证码">
-                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"
-                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">
-                        <span id="checkcode_message"></span>
-                    </div>
+<%--                    <div class="captcha input-wrapper" data-type="en">--%>
+<%--                        <input id="captcha-1" name="captcha" placeholder="验证码" required="" data-rule-required="true"--%>
+<%--                               data-msg-required="请填写验证码">--%>
+<%--                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"--%>
+<%--                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">--%>
+<%--                        <span id="checkcode_message"></span>--%>
+<%--                    </div>--%>
                 </div>
                 <div class="sign-btn">
                     <button class="sign-button submit" type="submit">注册</button>
@@ -161,7 +161,7 @@ function contactMe() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="home/img/22d94f6e50d98f6f68308814ff9795e2.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/618.jpg" alt="..." onclick="phone('手机')">
             <div class="carousel-caption">
 
             </div>
@@ -173,13 +173,13 @@ function contactMe() {
             </div>
         </div>
         <div class="item">
-            <img src="home/img/iphone_square_large.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/luyouqi.jpg" alt="..." onclick="phone('手机')">
             <div class="carousel-caption">
             </div>
         </div>
 
         <div class="item">
-        <img src="home/img/holiday_hero_subhead_2a_largetall.jpg" alt="..." onclick="phone('手机')">
+        <img src="home/img/vmall-mate-xs2-1.jpg" alt="..." onclick="phone('手机')">
         <div class="carousel-caption">
         </div>
         </div>
