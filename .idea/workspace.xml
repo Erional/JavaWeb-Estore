@@ -9,12 +9,8 @@
     <list default="true" id="b9b278d7-3890-4185-b2d4-c523750cb886" name="变更" comment="Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Estore/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Estore/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Estore/home/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Estore/home/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Estore/home/img/618.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Estore/home/img/618.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Estore/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Estore/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/nsu/edu/estore/web/servlet/ChangeCountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nsu/edu/estore/web/servlet/ChangeCountServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/home/img/618.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/img/618.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,7 @@
     <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunManager">
     <configuration name="Estore" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false">
@@ -162,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653015986290</updated>
       <workItem from="1653015988318" duration="5451000" />
-      <workItem from="1653264809800" duration="15952000" />
+      <workItem from="1653264809800" duration="23464000" />
     </task>
     <task id="LOCAL-00001" summary="Update README.md">
       <created>1653275521000</created>
@@ -185,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653275923241</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update README.md">
+      <created>1653351876733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653351876733</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update README.md">
+      <created>1653351885817</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653351885817</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

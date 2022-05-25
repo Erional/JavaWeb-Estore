@@ -24,7 +24,7 @@ public class ChangeCountServlet extends HttpServlet {
         int id=Integer.parseInt(request.getParameter("id"));
         int count=Integer.parseInt(request.getParameter("count"));
 
-        //2.修稿购物车的指定数量
+        //2.修该购物车的指定数量
         //2.1得到购物车
         Map<Product,Integer> cart=(Map<Product, Integer>) request.getSession().getAttribute("cart");
         //2.2修改购物车中的商品
