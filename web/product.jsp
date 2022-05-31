@@ -77,12 +77,12 @@ function tocart() {
                                placeholder="密码">
                         <span id="password_message-1"></span>
                     </div>
-                    <div class="captcha input-wrapper" data-type="en">
-                        <input id="captcha" name="captcha" placeholder="验证码" required="" data-rule-required="true"
-                               data-msg-required="请填写验证码">
-                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"
-                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">
-                    </div>
+<%--                    <div class="captcha input-wrapper" data-type="en">--%>
+<%--                        <input id="captcha" name="captcha" placeholder="验证码" required="" data-rule-required="true"--%>
+<%--                               data-msg-required="请填写验证码">--%>
+<%--                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"--%>
+<%--                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">--%>
+<%--                    </div>--%>
                 </div>
                 <div id="check-div">
                     <input type="checkbox" id="remember" name="remember" value="on"/>
@@ -116,13 +116,13 @@ function tocart() {
                                placeholder="重复密码">
                         <span id="repassword_message"></span>
                     </div>
-                    <div class="captcha input-wrapper" data-type="en">
-                        <input id="captcha-1" name="captcha" placeholder="验证码" required="" data-rule-required="true"
-                               data-msg-required="请填写验证码">
-                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"
-                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">
-                        <span id="checkcode_message"></span>
-                    </div>
+<%--                    <div class="captcha input-wrapper" data-type="en">--%>
+<%--                        <input id="captcha-1" name="captcha" placeholder="验证码" required="" data-rule-required="true"--%>
+<%--                               data-msg-required="请填写验证码">--%>
+<%--                        <img class="captcha-img" data-toggle="tooltip" data-placement="top" title="看不清楚？换一张"--%>
+<%--                             alt="验证码" src="${pageContext.request.contextPath}/checkImg" id="cimg" onclick="change()">--%>
+<%--                        <span id="checkcode_message"></span>--%>
+<%--                    </div>--%>
                 </div>
                 <div class="sign-btn">
                     <button class="sign-button submit" type="submit">注册</button>
