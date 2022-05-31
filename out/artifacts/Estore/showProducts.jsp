@@ -15,9 +15,7 @@
 			//确认删除
 			location.href = "${pageContext.request.contextPath}/ProductDelByIdServlet?id="
 					+ id;
-		}
-	};
-
+		}};
 	function change() {
 		//1.得到id为main的这个checkbox
 		var main = document.getElementById("main");

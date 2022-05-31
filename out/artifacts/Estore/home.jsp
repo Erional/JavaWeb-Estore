@@ -161,13 +161,13 @@ function contactMe() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="home/img/618.jpg" alt="..." onclick="phone('手机')">
+            <img src="home/img/618-2.jpg" alt="..." onclick="phone('手机')">
             <div class="carousel-caption">
 
             </div>
         </div>
         <div class="item">
-            <img src="home/img/macbookpro_large.jpg" alt="..." onclick="phone('笔记本')">
+            <img src="home/img/笔记本.jpg" alt="..." onclick="phone('笔记本')">
             <div class="carousel-caption">
 
             </div>
@@ -206,8 +206,10 @@ function contactMe() {
 <section class="sec1">
     <a><img src="home/img/HuaweiP40Pro.jpg" onclick="findProductById('26')"></a>
     <a><img src="home/img/P40.jpg" onclick="findProductById('27')"></a>
-    <a><img src="home/img/dd1c6b91990dee6177ad2ef4c1fb076e.png" onclick="findProductById('1')"></a>
-    <a><img src="home/img/62f38e9081afaf20535678571aaf6b3b.jpg" onclick="findProductById('5')"></a>
+<%--    <a><img src="home/img/dd1c6b91990dee6177ad2ef4c1fb076e.png" onclick="findProductById('1')"></a>--%>
+    <a><img src="home/img/mate405G.jpg" onclick="findProductById('1')"></a>
+<%--    <a><img src="home/img/62f38e9081afaf20535678571aaf6b3b.jpg" onclick="findProductById('5')"></a>--%>
+    <a><img src="home/img/P50.jpg" onclick="findProductById('5')"></a>
 </section>
 <section class="sec2">
     <h3>手机</h3>
@@ -261,49 +263,49 @@ function contactMe() {
 		</c:forEach>
     </div>
 </section>
-<section class="sec3">
-    <h3>配件</h3>
-    <a href="javascript:void(0)" onclick="phone('配件')">配件</a>
-    <div class="wrap">
-        <div class="slide">
-            <ul>
-                <c:forEach items="${pro4}" var="p" varStatus="vs" begin="0" end="4" step="1">
-        			<c:if test="${fn:substring(p.c3code,0,2)=='54' }">
-        			<li>
-						<div class="product">
-						<img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
-        				<span class="brand">${p.name}</span>
-        				<span class="title">${p.description}</span>
-        				<span class="price">${p.price}</span>
-        				<a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
-						</div>
-					</li>
-        			</c:if>
-				</c:forEach>
-      
-            </ul>
-            <ul>
-                <c:forEach items="${pro4}" var="p" varStatus="vs" begin="0" end="4" step="1">
-        			<c:if test="${fn:substring(p.c3code,0,2)=='54' }">
-        			<li>
-						<div class="product">
-						<img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">
-        				<span class="brand">${p.name}</span>
-        				<span class="title">${p.description}</span>
-        				<span class="price">${p.price}</span>
-        				<a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>
-						</div>
-					</li>
-        			</c:if>
-				</c:forEach>
-                
-            </ul>
+<%--<section class="sec3">--%>
+<%--    <h3>配件</h3>--%>
+<%--    <a href="javascript:void(0)" onclick="phone('配件')">配件</a>--%>
+<%--    <div class="wrap">--%>
+<%--        <div class="slide">--%>
+<%--            <ul>--%>
+<%--                <c:forEach items="${pro4}" var="p" varStatus="vs" begin="0" end="4" step="1">--%>
+<%--        			<c:if test="${fn:substring(p.c3code,0,2)=='54' }">--%>
+<%--        			<li>--%>
+<%--						<div class="product">--%>
+<%--						<img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">--%>
+<%--        				<span class="brand">${p.name}</span>--%>
+<%--        				<span class="title">${p.description}</span>--%>
+<%--        				<span class="price">${p.price}</span>--%>
+<%--        				<a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>--%>
+<%--						</div>--%>
+<%--					</li>--%>
+<%--        			</c:if>--%>
+<%--				</c:forEach>--%>
+<%--      --%>
+<%--            </ul>--%>
+<%--            <ul>--%>
+<%--                <c:forEach items="${pro4}" var="p" varStatus="vs" begin="0" end="4" step="1">--%>
+<%--        			<c:if test="${fn:substring(p.c3code,0,2)=='54' }">--%>
+<%--        			<li>--%>
+<%--						<div class="product">--%>
+<%--						<img src="/upload/${p.imgurl}" onclick="findProductById('${p.id}')">--%>
+<%--        				<span class="brand">${p.name}</span>--%>
+<%--        				<span class="title">${p.description}</span>--%>
+<%--        				<span class="price">${p.price}</span>--%>
+<%--        				<a href="${pageContext.request.contextPath}/ProductFindByIdServlet?id=${p.id}"><em class="fast-buy"></em></a>--%>
+<%--						</div>--%>
+<%--					</li>--%>
+<%--        			</c:if>--%>
+<%--				</c:forEach>--%>
+<%--                --%>
+<%--            </ul>--%>
 
-        </div>
-        <span class="wrap-left"></span>
-        <span class="wrap-right"></span>
-    </div>
-</section>
+<%--        </div>--%>
+<%--        <span class="wrap-left"></span>--%>
+<%--        <span class="wrap-right"></span>--%>
+<%--    </div>--%>
+<%--</section>--%>
 <aside class="aside-tool">
     <ul>
         <li class="customer">

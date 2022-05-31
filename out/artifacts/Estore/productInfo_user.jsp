@@ -19,29 +19,29 @@
                     <img src="/upload/${pro.imgurl }">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/e086ecc18effe218e6f9cefeb1745b83.jpg">
+                    <img src="https://img.alicdn.com/imgextra/i1/2201227850912/O1CN01Lgc56g1IbjspQJvFG_!!2201227850912.jpg_430x430q90.jpg">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/eb09f6835eb770e9106dff6b300fe2f8.jpg">
+                    <img src="https://img.alicdn.com/imgextra/i1/2201227850912/O1CN01dd1jHF1IbjnmsLhP0_!!0-item_pic.jpg_430x430q90.jpg">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/47bacd1fbf16cba1554d0723dddfe4fe.jpg">
+                    <img src="https://img.alicdn.com/imgextra/i3/2201227850912/O1CN015ryehX1Ibjnsgb15t_!!2201227850912.jpg_430x430q90.jpg">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/2e94f6482d570ce355030bea44fd42fa.jpg">
+                    <img src="https://img.alicdn.com/imgextra/i3/2201227850912/O1CN01fiWy9r1IbjntilwXF_!!2201227850912.jpg_430x430q90.jpg">
                 </li>
                 <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/e2c7f88b1bd6809ade50c5be45455da0.jpg">
+                    <img src="https://img.alicdn.com/imgextra/TB1d3uPzQT2gK0jSZPcL6UKkpXa_430x430q90.jpg">
                 </li>
-                <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/4cae1678a7b505eea715486651c0f4c7.jpg">
-                </li>
-                <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/fee60363efe598aa21d633a3671a4861.jpg">
-                </li>
-                <li class="">
-                    <img src="http://img001.fview.cn/Public/upload/product/76f87b698fe34f6447dd4e53dc052d44.jpg">
-                </li>
+<%--                <li class="">--%>
+<%--                    <img src="http://img001.fview.cn/Public/upload/product/4cae1678a7b505eea715486651c0f4c7.jpg">--%>
+<%--                </li>--%>
+<%--                <li class="">--%>
+<%--                    <img src="http://img001.fview.cn/Public/upload/product/fee60363efe598aa21d633a3671a4861.jpg">--%>
+<%--                </li>--%>
+<%--                <li class="">--%>
+<%--                    <img src="http://img001.fview.cn/Public/upload/product/76f87b698fe34f6447dd4e53dc052d44.jpg">--%>
+<%--                </li>--%>
             </ul>
         </div>
         <a class="arrow up i-icon"></a>
@@ -60,9 +60,9 @@
     </p>
     <ul class="details">
         <li><span>颜色</span><a class="u-check n-check">${pro.color }</a></li>
-        <li><span>内存</span><a class="u-check n-check">64G</a></li>
-        <li><span>版本</span><a class="u-check n-check">联通4G/移动4G/电信4G</a></li>
-        <li><span>销售地区</span><a class="u-check n-check">加拿大</a></li>
+        <li><span>内存</span><a class="u-check n-check">128G</a></li>
+        <li><span>版本</span><a class="u-check n-check">联通5G/移动5G/电信5G</a></li>
+        <li><span>销售地区</span><a class="u-check n-check">中国</a></li>
         <li><span>购买数量：</span>
             <div class="count-box">
                     <input class="min" name="" type="button" value="-"/>
