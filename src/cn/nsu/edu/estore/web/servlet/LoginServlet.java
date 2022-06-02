@@ -3,15 +3,14 @@ package cn.nsu.edu.estore.web.servlet;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URLEncoder;
+import java.sql.SQLException;
 import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
+import cn.nsu.edu.estore.dao.UserDao;
 import org.apache.commons.beanutils.BeanUtils;
 
 import cn.nsu.edu.estore.domain.User;
@@ -41,14 +40,13 @@ public class LoginServlet extends HttpServlet {
         // 1.得到所有请求参数，封装到User对象中.
         User user = new User();
 
+
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
         try {
             BeanUtils.populate(user, request.getParameterMap());
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 
@@ -58,10 +56,29 @@ public class LoginServlet extends HttpServlet {
 
         if (map.size() != 0) {
             request.setAttribute("map", map);
-            request.getRequestDispatcher("/home.jsp").forward(request,
-                    response);
+//            session.setAttribute("nullError","不能为空");
+//            response.sendRedirect(request.getContextPath()+"/home.jsp");
+            request.getRequestDispatcher("/home.jsp").forward(request, response);
             return;
         }
+//        //验证是否有该用户
+//        HttpSession session=request.getSession();
+//        try {
+//            User user2=UserDao.findUserByLogin(username,password);
+//            System.out.println(user2);
+//            if (user2.getUsername()!=null){
+//                if (user2.getPassword()!=null){
+//                    //登录成功
+//                    request.getSession().setAttribute("user", user2);
+//                    response.sendRedirect(request.getContextPath());
+//                }else {
+//                    session.setAttribute("map", map);
+//                    request.getRequestDispatcher("/home.jsp").forward(request, response);
+//                }
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
 
 
         // 3.调用service中登录的方法
@@ -117,7 +134,8 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
             request.setAttribute("login.message", e.getMessage());
             request.getRequestDispatcher("/home.jsp")
-                    .forward(request, response);
+//            request.getRequestDispatcher("/activeuser_error.jsp")
+            .forward(request, response);
             return;
         } catch (javax.security.auth.login.LoginException e) {
             // TODO Auto-generated catch block

@@ -34,7 +34,8 @@ public class CheckImgServlet extends HttpServlet {
     public void init() throws ServletException {
         // 初始化阶段，读取new_words.txt
         // web工程中读取 文件，必须使用绝对磁盘路径
-        String path = getServletContext().getRealPath("/WEB-INF/new_words.txt");
+//        String path = getServletContext().getRealPath("/WEB-INF/new_words.txt");
+        String path = getServletContext().getRealPath("/WEB-INF/word.txt");
         try {
             BufferedReader reader = new BufferedReader(new FileReader(path));
             String line;
@@ -110,7 +111,7 @@ public class CheckImgServlet extends HttpServlet {
         int x2;
         int y1;
         int y2;
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 5; i++) {
             x1 = random.nextInt(width);
             x2 = random.nextInt(12);
             y1 = random.nextInt(height);

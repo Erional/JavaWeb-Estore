@@ -18,22 +18,28 @@ public class UserService {
     public void regist(User user) throws RegistException {
 
         UserDao dao = new UserDao();
+//        try {
+//            //1.添加注册用户信息
+//            dao.addUser(user);
+//            //2.向注册用户发送激活邮件
+//            String emailMsg = "注册成功，请点击下列连接已完成激活操作:(ps:由于邮箱原因，请复制链接打开！)"+"<br>"+
+//                    "http://localhost:8080/Estore/UserActiveServlet?activeCode="+user.getActivecode();
+//            MailUtils.sendMail(user.getEmail(), emailMsg);
+//        } catch (SQLException e) {
+//            throw new RegistException("注册失败");
+//        } catch (AddressException e) {
+//            e.printStackTrace();
+//        } catch (MessagingException e) {
+//            e.printStackTrace();
+//        } catch (GeneralSecurityException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+        //1.添加注册用户信息
         try {
-            //1.添加注册用户信息
             dao.addUser(user);
-            //2.向注册用户发送激活邮件
-            String emailMsg = "注册成功，请点击下列连接已完成激活操作:(ps:由于邮箱原因，请复制链接打开！)"+"<br>"+
-                    "http://localhost:8080/Estore/UserActiveServlet?activeCode="+user.getActivecode();
-            MailUtils.sendMail(user.getEmail(), emailMsg);
         } catch (SQLException e) {
             throw new RegistException("注册失败");
-        } catch (AddressException e) {
-            e.printStackTrace();
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (GeneralSecurityException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
     }
     /*1. 注册操作		END*/

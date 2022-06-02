@@ -41,8 +41,9 @@ public class AddOrderServlet extends HttpServlet {
             return;
         } catch (addOrderException e) {
             request.setAttribute("addOrder.message", e.getMessage());
-            request.getRequestDispatcher("/error/addOrder_error.jsp").forward(request,
-                    response);
+//            request.getRequestDispatcher("/error/addOrder_error.jsp")
+            request.getRequestDispatcher("order_success.jsp")
+                    .forward(request,response);
             return;
         }
     }

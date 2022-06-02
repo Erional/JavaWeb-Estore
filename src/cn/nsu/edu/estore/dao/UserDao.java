@@ -41,19 +41,17 @@ public class UserDao {
     }
 
     //4. 登录操作
-    public User findUserByLogin(String username, String password) throws SQLException {
+    public static User findUserByLogin(String username, String password) throws SQLException {
         if (username.contains("@")) {
 
             String sql = "select * from users where email=? and password=?";
             QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-            return runner.query(sql, new BeanHandler<User>(User.class), username,
-                    password);
+            return runner.query(sql, new BeanHandler<User>(User.class), username, password);
 
         }else {
             String sql = "select * from users where username=? and password=?";
             QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-            return runner.query(sql, new BeanHandler<User>(User.class), username,
-                    password);
+            return runner.query(sql, new BeanHandler<User>(User.class), username, password);
         }
     }
 
